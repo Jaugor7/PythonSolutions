@@ -1,0 +1,27 @@
+#https://www.hackerrank.com/challenges/designer-door-mat/problem
+
+inp_str = raw_input()
+lst = inp_str.split()
+
+len = int(lst[0])
+
+wid = int(lst[1])
+a = int(len/2)
+
+ch = ".|."
+wel = "WELCOME"
+
+for x in range(a+1):
+    if(x < a):
+        print(ch*((2*x)+1)).center(wid, '-')
+    elif x == a:
+        print(wel).center(wid, '-')
+              
+y = int(len/2) - 1 
+
+while y >= 0:
+    print(ch*((2*y)+1)).center(wid, '-')  
+    y = y-1
+              
+              
+    
